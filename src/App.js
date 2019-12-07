@@ -9,10 +9,13 @@ import Private from "./pages/private/Private";
 import Roscones from "./pages/roscones/Roscones";
 import Wedings from "./pages/wedings/Wedings";
 
+import menuRoutes from "./assets/menuRoutes.json";
+
+
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar routes={menuRoutes}></NavBar>
       <Switch>
         <Route path="/empresas" component={Companies} />
         <Route path="/particulares" component={Private} />

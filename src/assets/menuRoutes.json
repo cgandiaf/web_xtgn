@@ -1,0 +1,18 @@
+[
+    {
+        "route": "/empresas",
+        "name": "Empresas"
+    },
+    {
+        "route": "/particulares",
+        "name": "Particulares"
+    },
+    {
+        "route": "/bodas",
+        "name": "Bodas"
+    },
+    {
+        "route": "/roscones",
+        "name": "Roscones"
+    }
+]
