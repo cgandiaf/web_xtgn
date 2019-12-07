@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 // import icon from '../../../public/images/icon_xtragon.png';
-// import menuIcon from '../../../public/images/manu-icon.png';
+import BurgerIcon from "./components/BurgerIcon";
 import "./NavBar.scss";
 
 export default class NavBar extends Component {
@@ -33,7 +33,10 @@ export default class NavBar extends Component {
         </div>
         <div className="mobile-menu-icon">
           {/* <img src={menuIcon} alt="menu-icon"/> */}
-          <div onClick={this.menuToggle}>X</div>
+          <BurgerIcon
+            onClick={this.menuToggle}
+            isOpen={this.state.isMenuOpen}
+          />
         </div>
         {this.state.isMenuOpen && (
           <Fragment>
